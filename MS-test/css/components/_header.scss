@@ -1,0 +1,51 @@
+.header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 100;
+    transition: all .3s ease;
+    background-image: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.2));
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    &__logo {
+        height: auto;
+        width: 200px;
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+
+        & li  {
+            &:not(:last-of-type) {
+                margin-right: 20px;
+            }
+
+            & a {
+                color: $cream;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: $fw-bold;
+                letter-spacing: .2px;
+                font-size: $p-m;
+                transition: all .3s ease;
+
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){ 
+    .header {
+        justify-content: center;
+    }
+}
