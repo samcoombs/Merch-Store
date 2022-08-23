@@ -31,7 +31,7 @@ const navLink = document.querySelectorAll('.header__list li a');
 
 // HOMEPAGE ONLY
 // When on WP: body.classList.contains('home')
-if(siteURL.pathname === '/home.html'){
+if(siteURL.pathname === '/'){
 
     // Hero Mute
     (function(){
